@@ -48,7 +48,7 @@ export const AddProducts = () => {
             })
     }
 
-    return (
+    return (  
         <div className='container'>
             <br />
             <h2>ADD PRODUCTS</h2>
@@ -57,7 +57,7 @@ export const AddProducts = () => {
                 <label htmlFor="product-name">Product Name</label>
                 <input type="text" className='form-control' required
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
-                <br />
+                <br/> 
                 <label htmlFor="product-price">Product Price</label>
                 <input type="number" className='form-control' required
                     onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
