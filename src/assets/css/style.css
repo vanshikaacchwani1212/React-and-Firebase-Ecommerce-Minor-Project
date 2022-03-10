@@ -1,0 +1,266 @@
+/* header Css */ 
+body{
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav-bg{
+	background-color: #f8b344;
+	color: black;
+	font-size: 13px;
+}
+
+
+.header-inner-bg{
+	background-color: black;
+	padding: 0px;
+}
+
+.logo{
+	padding: 25px;
+	margin-top: -39px;
+    background: #ffffff;
+}
+
+.navbarSpacing{
+	padding-left: 10px;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+.nav-link:any-link {
+	color: white;
+}
+
+a{
+	font-size: 22px;
+	color: white;
+}
+
+a:hover{
+	color: #f8b344;
+}
+
+.navbar-toggler{
+	display: none;
+}
+
+.icons-margin{
+	margin-top: 5px;
+	margin-left: 80px;
+}
+  
+  .icon-spacing{
+	  padding-left: 10px;
+  }
+
+  .page-link{
+	  color: black;
+  }
+
+  .page-link:hover{
+	color: orange;
+}
+
+
+/* slidder css */
+.carousel-indicators>button:hover{
+	background-color: #f9b244;
+}
+
+/* bestseller css */
+ .text_padding
+{
+	padding: 20px 0px 20px;
+}
+
+.add-to-cart-button
+{
+	font-size:18px;
+	color:white;
+	background-color: black;
+	font-weight:bold;
+	border: none;
+	width: auto;
+   /* height:37px; */
+   border-radius:10px;
+}
+
+.add-to-cart-button:hover
+{
+	font-size:18px;
+	color:orange;
+	/* background-color: black; */
+	font-weight:bold;
+	border: none;
+	width: auto;
+   /* height:37px; */
+   border-radius:10px;
+}
+
+h3:after {
+    content: "";
+    background: black;
+    width: 100px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+	margin-top: 5px;
+    position: absolute;
+}
+
+.product_pricing{
+	color: orange;
+}
+
+.card{
+	margin-top: 30px;
+}
+
+/* All Products css */
+.text_padding1
+{
+	padding: 20px 0px 10px;
+}
+
+.banner-bg{
+	background: url("../images/sub-banner-bg.jpg");
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+
+/* .see-more-button
+{
+	font-size:18px;
+	width:150px;
+    border-radius:10px;
+	color: black;
+	margin-top: 30px;
+	background-color: #EFEAE0;
+	border: 1px solid black;
+}
+
+.see-more-button:hover
+{
+	font-size:18px;
+	width:150px;
+    height:40px;
+    border-radius:10px;
+	color: black;
+	margin-top: 30px;
+	background-color: white;
+} */
+
+/* Footer Css */
+.footer_bg
+{
+	padding-top:20px;
+    background-color: black;
+    padding-bottom:20px;
+}
+
+.footer_text
+{
+	font-size:15px;
+	color: white;
+}
+
+/* login css */
+.card-border{
+	border-radius: 1rem;
+	color: blue;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.no-account .register-link{
+	color: #393f81;
+}
+
+/* cart css */
+
+.button-margin{
+	margin: 0px 30px 0px 30px;
+}
+
+@media (min-width: 1025px) {
+	.h-custom {
+	height: 100vh !important;
+	}
+	}
+	
+	.card-registration .select-input.form-control[readonly]:not([disabled]) {
+	font-size: 1rem;
+	line-height: 2.15;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.card-registration .select-arrow {
+	top: 13px;
+	}
+	
+	.bg-grey {
+	background-color: #eae8e8;
+	}
+
+
+	
+	@media (min-width: 992px) {
+	.card-registration-2 .bg-grey {
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	}
+	}
+	
+	@media (max-width: 991px) {
+	.card-registration-2 .bg-grey {
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	}
+	}
+
+
+/* temporary search bar css */
+.form-outline-searchbar{
+	width: 150px;
+}
+
+.search-icon{
+	background:#F8B344;
+	color: white;
+}
+
+.user-icon{
+	color: white;
+	font-size: 22px;
+	margin-top: -5px;
+}
+
+.user-icon:hover{
+	color: #F8B344;
+	font-size: 22px;
+}
+
+.cart-icon{
+	margin-top: -5px;
+	margin-left: -10px;
+}
+
+.dropdown>ul>li{
+	border-bottom: 1px solid lightgray;
+}
