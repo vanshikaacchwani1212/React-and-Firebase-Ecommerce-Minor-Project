@@ -48,7 +48,7 @@ export const AddProducts = () => {
             })
     }
 
-    return (
+    return (  
         <div className='container'>
             <br />
             <h2>ADD PRODUCTS</h2>
