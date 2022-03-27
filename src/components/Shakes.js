@@ -13,7 +13,7 @@ const Shakes = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/butterscotch-shake.jpg")} className="card-img-top img-fluid rounded-3" alt="img"/>
+                <img src= {require("../assets/images/butterscotch-shake.png")} className="card-img-top img-fluid rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -32,7 +32,7 @@ const Shakes = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/strawberry-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/strawberry-shake.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -54,7 +54,7 @@ const Shakes = () => {
             <div className="card rounded-3">
 
               <div className="view overlay">
-                <img src= {require("../assets/images/chocolate-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/chocolate-shake.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -74,7 +74,7 @@ const Shakes = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/oreo-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/oreo-shake.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -98,7 +98,7 @@ const Shakes = () => {
   
               <div className="card rounded-3">
                 <div className="view overlay">
-                  <img src= {require("../assets/images/kitkat-shake.jpg")} className="card-img-top img-fluid rounded-3" alt="img"/>
+                  <img src= {require("../assets/images/kitkat-shake.png")} className="card-img-top img-fluid rounded-3" alt="img"/>
                   <a href="#">
                     <div className="mask rgba-white-slight"></div>
                   </a>
@@ -119,7 +119,7 @@ const Shakes = () => {
             <div className="col-lg-3 col-md-3 col-6">
               <div className="card rounded-3">
                 <div className="view overlay">
-                  <img src= {require("../assets/images/Dry-Fruits-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                  <img src= {require("../assets/images/Dry-Fruits-shake.png")} className="card-img-top rounded-3" alt="img"/>
                   <a href="#">
                     <div className="mask rgba-white-slight"></div>
                   </a>
@@ -141,7 +141,7 @@ const Shakes = () => {
   
                 
                 <div className="view overlay">
-                  <img src= {require("../assets/images/pineapple-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                  <img src= {require("../assets/images/pineapple-shake.png")} className="card-img-top rounded-3" alt="img"/>
                   <a href="#">
                     <div className="mask rgba-white-slight"></div>
                   </a>
@@ -162,7 +162,7 @@ const Shakes = () => {
             <div className="col-lg-3 col-md-3 col-6">
               <div className="card rounded-3">
                 <div className="view overlay">
-                  <img src= {require("../assets/images/papaya-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                  <img src= {require("../assets/images/papaya-shake.png")} className="card-img-top rounded-3" alt="img"/>
                   <a href="#">
                     <div className="mask rgba-white-slight"></div>
                   </a>
@@ -189,7 +189,7 @@ const Shakes = () => {
             
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/banana-shake.jpg")} className="card-img-top img-fluid rounded-3" alt="img"/>
+                <img src= {require("../assets/images/banana-shake.png")} className="card-img-top img-fluid rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -213,7 +213,7 @@ const Shakes = () => {
             
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/Chikoo-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/Chikoo-shake.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>

@@ -31,7 +31,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/orange-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/orange-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -51,7 +51,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/pineapple-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/pineapple-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -70,7 +70,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/mixed-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/mixed-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -93,7 +93,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/mosambi-juice.jpg")} className="card-img-top img-fluid rounded-3" alt="img" />
+                                    <img src={require("../assets/images/mosambi-juice.png")} className="card-img-top img-fluid rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -112,7 +112,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/pomegranate-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/pomegranate-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -130,7 +130,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/grapes-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/grapes-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -150,7 +150,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/guava-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/guava-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -175,7 +175,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/watermelon-juice.jpg")} className="card-img-top img-fluid rounded-3" alt="img" />
+                                    <img src={require("../assets/images/watermelon-juice.png")} className="card-img-top img-fluid rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -196,7 +196,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/kiwi-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/kiwi-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>
@@ -217,7 +217,7 @@ const Juices = () => {
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/dragon-juice.jpg")} className="card-img-top rounded-3" alt="img" />
+                                    <img src={require("../assets/images/dragon-juice.png")} className="card-img-top rounded-3" alt="img" />
                                     <a href="#">
                                         <div className="mask rgba-white-slight"></div>
                                     </a>

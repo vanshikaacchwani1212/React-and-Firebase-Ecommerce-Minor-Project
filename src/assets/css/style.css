@@ -261,6 +261,11 @@ h3:after {
 	margin-left: -10px;
 }
 
-.dropdown>ul>li{
-	border-bottom: 1px solid lightgray;
+.loginregister_button{
+	color: black;
+	text-decoration: none;
+}
+
+.loginregister_button:hover{
+	color: black;
 }
