@@ -13,7 +13,7 @@ const Icecreams = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/vanilla-icecream.jpg")} className="card-img-top img-fluid rounded-3" alt="img"/>
+                <img src= {require("../assets/images/vanilla-icecream.png")} className="card-img-top img-fluid rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -33,7 +33,7 @@ const Icecreams = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/strawberry-icecream.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/strawberry-icecream.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -51,7 +51,7 @@ const Icecreams = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/chocolate-icecream.jpg")} className="card-img-top rounded-3" alt=""/>
+                <img src= {require("../assets/images/chocolate-icecream.png")} className="card-img-top rounded-3" alt=""/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -69,7 +69,7 @@ const Icecreams = () => {
           <div className="col-lg-3 col-md-3 col-6">
             <div className="card rounded-3">
               <div className="view overlay">
-                <img src= {require("../assets/images/mango-icecream.jpg")} className="card-img-top rounded-3" alt="img"/>
+                <img src= {require("../assets/images/mango-icecream.png")} className="card-img-top rounded-3" alt="img"/>
                 <a href="#">
                   <div className="mask rgba-white-slight"></div>
                 </a>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/images/BRD_Logo.png'
 import '../assets/js/nav'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
@@ -72,9 +72,12 @@ const Navbar = () => {
                                                 <i className="fa fa-fw fa-user"></i>
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><Link className="dropdown-item" to="/">Login</Link></li>
-                                                <li><a className="dropdown-item" href="#">Register</a></li>
-                                                <li><a className="dropdown-item" href="#">Logout</a></li>
+                                                <h5 className='text-center'>Welcome User</h5>
+                                                <button type="submit">
+                                                    <Link to="/" className='loginregister_button'>Login/Register</Link>
+                                                </button>
+                                                {/* <li><a className="dropdown-item" href="#">Register</a></li>
+                                                <li><a className="dropdown-item" href="#">Logout</a></li> */}
                                             </ul>
                                         </div>
                                         <div className="cart-icon">
@@ -102,7 +105,7 @@ const Navbar = () => {
 
                 <UserAuthContextProvider>
                     <Routes>
-                        <Route path='/' element={<Login />} />
+                        <Route path='/' element={<Login/>} />
                         <Route path='/Register' element={<Register />} />
                     </Routes>
                 </UserAuthContextProvider>

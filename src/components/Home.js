@@ -37,7 +37,7 @@ const Home = () => {
                             <div className="col-lg-3 col-md-3 col-6">
                                 <div className="card rounded-3">
                                     <div className="view overlay">
-                                        <img src= {require("../assets/images/orange-juice.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                        <img src= {require("../assets/images/orange-juice.png")} className="card-img-top rounded-3" alt="img"/>
                                             <a href="#">
                                                 <div className="mask rgba-white-slight"></div>
                                             </a>
@@ -58,7 +58,7 @@ const Home = () => {
                             <div className="col-lg-3 col-md-3 col-6">
                                 <div className="card rounded-3">
                                     <div className="view overlay">
-                                        <img src= {require("../assets/images/pineapple-juice.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                        <img src= {require("../assets/images/pineapple-juice.png")} className="card-img-top rounded-3" alt="img"/>
                                             <a href="#">
                                                 <div className="mask rgba-white-slight"></div>
                                             </a>
@@ -78,7 +78,7 @@ const Home = () => {
                             <div className="col-lg-3 col-md-3 col-6">
                                 <div className="card rounded-3">
                                     <div className="view overlay">
-                                        <img src= {require("../assets/images/mixed-juice.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                        <img src= {require("../assets/images/mixed-juice.png")} className="card-img-top rounded-3" alt="img"/>
                                             <a href="#">
                                                 <div className="mask rgba-white-slight"></div>
                                             </a>
@@ -108,7 +108,7 @@ const Home = () => {
                                 <div className="col-lg-3 col-md-3 col-6">
                                     <div className="card rounded-3">
                                         <div className="view overlay">
-                                            <img src= {require("../assets/images/pomegranate-juice.jpg")} className="card-img-top img-fluid rounded-3" alt="img"/>
+                                            <img src= {require("../assets/images/pomegranate-juice.png")} className="card-img-top img-fluid rounded-3" alt="img"/>
                                                 <a href="#">
                                                     <div className="mask rgba-white-slight"></div>
                                                 </a>
@@ -126,7 +126,7 @@ const Home = () => {
                                 <div className="col-lg-3 col-md-3 col-6">
                                     <div className="card rounded-3">
                                         <div className="view overlay">
-                                            <img src= {require("../assets/images/kitkat-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                            <img src= {require("../assets/images/kitkat-shake.png")} className="card-img-top rounded-3" alt="img"/>
                                                 <a href="#">
                                                     <div className="mask rgba-white-slight"></div>
                                                 </a>
@@ -146,7 +146,7 @@ const Home = () => {
                                 <div className="col-lg-3 col-md-3 col-6">
                                     <div className="card rounded-3">
                                         <div className="view overlay">
-                                            <img src= {require("../assets/images/mango-shake.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                            <img src= {require("../assets/images/mango-shake.png")} className="card-img-top rounded-3" alt="img"/>
                                                 <a href="#">
                                                     <div className="mask rgba-white-slight"></div>
                                                 </a>
@@ -168,7 +168,7 @@ const Home = () => {
                                 <div className="col-lg-3 col-md-3 col-6">
                                     <div className="card rounded-3">
                                         <div className="view overlay">
-                                            <img src= {require("../assets/images/vanilla-icecream.jpg")} className="card-img-top rounded-3" alt="img"/>
+                                            <img src= {require("../assets/images/vanilla-icecream.png")} className="card-img-top rounded-3" alt="img"/>
                                                 <a href="#">
                                                     <div className="mask rgba-white-slight"></div>
                                                 </a>
