@@ -15,7 +15,7 @@ const Register = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    try {
+    try {  
       await signUp(email, password);
       navigate("/");
     } catch (err) {
