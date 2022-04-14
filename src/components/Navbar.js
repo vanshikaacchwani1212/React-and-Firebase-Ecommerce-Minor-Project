@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../assets/images/BRD_Logo.png'
 import '../assets/js/nav'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
@@ -11,8 +11,7 @@ import Login from './Login'
 import Cart from './Cart'
 import Register from './Register'
 import { UserAuthContextProvider } from '../context/UserAuthContext';
-import { AddProducts } from './AddProducts'
-// import Logout from './Logout'
+import Logout from './Logout'
 
 
 const Navbar = () => {
@@ -67,19 +66,24 @@ const Navbar = () => {
                                             </button>
                                         </div>
 
-                                        <div className="dropdown">
+                                        {/* <div className="dropdown">
                                             <button className="btn dropdown-toggle user-icon" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i className="fa fa-fw fa-user"></i>
+                                                <Link to="/"><i className="fa fa-fw fa-user"></i></Link>
                                             </button>
-                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <h5 className='text-center'>Welcome User</h5>
-                                                <button type="submit">
-                                                    <Link to="/" className='loginregister_button'>Login/Register</Link>
-                                                </button>
-                                                {/* <li><a className="dropdown-item" href="#">Register</a></li>
-                                                <li><a className="dropdown-item" href="#">Logout</a></li> */}
-                                            </ul>
+                                            
+                                        </div> */}
+
+
+                                        <div className="user-icon">
+                                        <button type="button" className="btn">
+                                                <Link to="/"><i className="fa fa-fw fa-user"></i></Link>
+                                        </button>
+                                          
+                                        {/* <button type="button" className="btn">
+                                                <Link to="" >Logout</Link>
+                                            </button> */}
                                         </div>
+
                                         <div className="cart-icon">
                                             <button type="button" className="btn">
                                                 <Link to="/Cart"><i className="fa fa-fw fa-shopping-cart"></i></Link>
@@ -100,12 +104,13 @@ const Navbar = () => {
                     <Route path='/Season' element={<Season />} />
                     <Route path='/Icecreams' element={<Icecreams />} />
                     <Route path='/Cart' element={<Cart />} />
-                    <Route path='/AddProducts' element={<AddProducts />} />
+                    <Route path='/Logout' element={<Logout />} />
                 </Routes>
+
 
                 <UserAuthContextProvider>
                     <Routes>
-                        <Route path='/' element={<Login/>} />
+                        <Route path='/' element={<Login />} />
                         <Route path='/Register' element={<Register />} />
                     </Routes>
                 </UserAuthContextProvider>

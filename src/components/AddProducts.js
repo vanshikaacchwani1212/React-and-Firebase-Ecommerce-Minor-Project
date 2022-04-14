@@ -95,3 +95,4 @@ export const AddProducts = () => {
         </div>
     )
 }
+export default AddProducts

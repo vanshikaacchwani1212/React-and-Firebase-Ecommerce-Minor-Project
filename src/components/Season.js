@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import sanityClient from "../client";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+  return builder.image(source);
+}
 
 const Season = () => {
+
+    const [products, setProducts] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "products" && references('fe6cc933-4aa7-4488-ad42-ebf41d1f81df')]{
+					_id,
+                    productName,
+                    productPrice,
+                    productImage{
+                        asset->{
+                        _id,
+                        url
+                        },
+                    }
+                }`
+      )
+      .then((data) => setProducts(data))
+      .catch(console.error);
+  }, []);
+
     return (
         <div>
             <div className="container-fluid text-center text_padding">
@@ -10,81 +40,26 @@ const Season = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-3 col-md-3 col-6">
+                    {products &&
+                    products.map((product,id,productid,priceid) => (
+                        <div className="col-lg-3 col-md-3 col-6" key={id}>
                             <div className="card rounded-3">
                                 <div className="view overlay">
-                                    <img src={require("../assets/images/mango-shake.png")} className="card-img-top img-fluid rounded-3" alt="img" />
-                                    <a href="#">
+                                    <img src={urlFor(product.productImage).width(200).url()} className="card-img-top img-fluid rounded-3" alt="img" />
+                                    {/* <a href="#">
                                         <div className="mask rgba-white-slight"></div>
-                                    </a>
+                                    </a> */}
                                 </div>
 
                                 <div className="card-body">
-                                    <h4 className="card-title">Mango Shake</h4>
-                                    <p className="card-text fw-bold product_pricing">₹70</p>
+                                    <h4 className="card-title" key={productid}>{product.productName}</h4>
+                                    <p className="card-text fw-bold product_pricing" key={priceid}>₹{product.productPrice}</p>
                                     <a href="#!" className="btn add-to-cart-button">Add to Cart</a>
                                 </div>
 
                             </div>
                         </div>
-
-
-                        <div className="col-lg-3 col-md-3 col-6">
-                            <div className="card rounded-3">
-                                <div className="view overlay">
-                                    <img src={require("../assets/images/beet-juice.png")} className="card-img-top rounded-3" alt="img" />
-                                    <a href="#">
-                                        <div className="mask rgba-white-slight"></div>
-                                    </a>
-                                </div>
-
-
-                                <div className="card-body">
-                                    <h4 className="card-title">Carrot Beetroot Juice</h4>
-                                    <p className="card-text fw-bold product_pricing">₹50</p>
-                                    <a href="#" className="btn add-to-cart-button">Add to Cart</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-3 col-6">
-                            <div className="card rounded-3">
-                                <div className="view overlay">
-                                    <img src={require("../assets/images/lychee-shake.png")} className="card-img-top rounded-3" alt="img" />
-                                    <a href="#">
-                                        <div className="mask rgba-white-slight"></div>
-                                    </a>
-                                </div>
-
-                                <div className="card-body">
-                                    <h4 className="card-title">Lychee Shake</h4>
-                                    <p className="card-text fw-bold product_pricing">₹80</p>
-                                    <a href="#" className="btn add-to-cart-button">Add to Cart</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-3 col-6">
-                            <div className="card rounded-3">
-                                <div className="view overlay">
-                                    <img src={require("../assets/images/kaju-anjeer-shake.png")} className="card-img-top rounded-3" alt="img" />
-                                    <a href="#">
-                                        <div className="mask rgba-white-slight"></div>
-                                    </a>
-                                </div>
-
-                                <div className="card-body">
-                                    <h4 className="card-title">Kaju Anjeer Shake</h4>
-                                    <p className="card-text fw-bold product_pricing">₹120</p>
-                                    <a href="#" className="btn add-to-cart-button">Add to Cart</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
+                    ))}
                     </div>
                 </div>
             </div>

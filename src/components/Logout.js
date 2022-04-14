@@ -18,7 +18,7 @@ const Logout = () => {
   };
   return (
     <div className=".body">
-      <div className="p-4 box mt-3 text-center" style={{Color:"black"}}>
+      <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>

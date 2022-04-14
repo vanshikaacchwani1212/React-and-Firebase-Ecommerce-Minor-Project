@@ -5,6 +5,8 @@
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.17",
     "@popperjs/core": "^2.11.2",
+    "@sanity/client": "^3.3.0",
+    "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
