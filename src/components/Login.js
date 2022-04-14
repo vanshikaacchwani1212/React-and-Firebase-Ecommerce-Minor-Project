@@ -1,36 +1,37 @@
 import React, { useState } from 'react'
-import { Link, useNavigate   } from 'react-router-dom'
-import {Alert } from 'react-bootstrap'
-import { useUserAuth} from '../context/UserAuthContext';
+import { Link } from 'react-router-dom'
+// import {Alert } from 'react-bootstrap'
+// import { useUserAuth} from '../context/UserAuthContext';
 
 const Login = () => {
+    
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const { logIn, googleSignIn } = useUserAuth();
-    const navigate = useNavigate();
+    // const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
+    // const [error, setError] = useState("");
+    // const { logIn, googleSignIn } = useUserAuth();
+    // const navigate = useNavigate();
   
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setError("");
-      try {
-        await logIn(email, password);
-        navigate("/Home");
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-  
-    const handleGoogleSignIn = async (e) => {
-      e.preventDefault();
-      try {
-        await googleSignIn();
-        navigate("/Home");
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
+    // const handleSubmit = async (e) => {
+    //   e.preventDefault();
+    //   setError("");
+    //   try {
+    //     await logIn(email, password);
+    //     navigate("/Home");
+    //   } catch (err) {
+    //     setError(err.message);
+    //   }
+    // };
+   
+    // const handleGoogleSignIn = async (e) => {
+    //   e.preventDefault();
+    //   try {
+    //     await googleSignIn();
+    //     navigate("/Home");
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // };
     
     return (
         <section className="container py-5 h-100">
@@ -46,18 +47,17 @@ const Login = () => {
                             </div>
                             <div className="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div className="card-body p-4 p-lg-5 text-black">
-                                {error && <Alert variant="danger">{error}</Alert>}
-                                    <form onSubmit={handleSubmit}>
+                                    <form name="login">
                                         <div className="d-flex align-items-center mb-3 pb-1">
                                             <span className="h1 fw-bold mb-0">Login Form</span>
                                         </div>
 
                                         <div className="form-outline mb-4">
-                                            <input type="email" id="form2Example17" className="form-control form-control-lg" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)}/>
+                                            <input type="email" id="form2Example17" className="form-control form-control-lg" placeholder="Email Address"/>
                                         </div>
 
                                         <div className="form-outline mb-4">
-                                            <input type="password" id="form2Example27" className="form-control form-control-lg" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                                            <input type="password" id="form2Example27" className="form-control form-control-lg" placeholder="Password"/>
                                         </div>
 
                                         <div className="pt-1 mb-4">
@@ -69,8 +69,11 @@ const Login = () => {
                                         </div>
 
                                         <div className="pt-1 mb-4">
-                                            <button className="btn btn-dark btn-lg btn-block" style={{backgroundColor: "#dd4b39"}} onClick={handleGoogleSignIn}>Continue with Google</button>
+                                            <button className="btn btn-dark btn-lg btn-block" type="button" style={{backgroundColor: "#dd4b39"}}>Continue with Google</button>
                                         </div>
+
+                                        {/* <Link className="btn btn-primary btn-lg btn-block" style={{backgroundColor: "#dd4b39"}} to="#!" role="button">
+                                            <i className="fa fa-fw fa-google me-2"></i>Continue with Google</Link> */}
 
                                         <p className="mb-5 pb-lg-2 no-account text-center m-5">Don't have an account?
                                             <Link to='/Register' className="fw-bold text-body register-link">Register here</Link>

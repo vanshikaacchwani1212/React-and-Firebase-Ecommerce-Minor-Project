@@ -20,8 +20,6 @@
   margin-top: 15px;
 }
 
-
-
 .dropdown-toggle::after {
   color: white;
 }
@@ -188,7 +186,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1224px){
+@media (min-width: 768px) and (max-width: 1024px){
   .nav-link{
     color: orange;
   }

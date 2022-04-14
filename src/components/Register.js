@@ -4,18 +4,17 @@ import { useUserAuth } from "../context/UserAuthContext";
 import {Alert} from 'react-bootstrap';
 const Register = () => {
 
-  
+  // const [fullname,setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [password, setPassword] = useState("");
   const { signUp } = useUserAuth();
   let navigate = useNavigate();
-  
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    try {  
+    try {
       await signUp(email, password);
       navigate("/");
     } catch (err) {
@@ -48,7 +47,7 @@ const Register = () => {
 
 
                         <div className="form-outline mb-4">
-                          <input type="text" id="form3Example1cg" className="form-control form-control-lg" placeholder="Your Name" />
+                          <input type="fullname" id="form3Example1cg" className="form-control form-control-lg" placeholder="Your Name"/>
                           
                         </div>
 
